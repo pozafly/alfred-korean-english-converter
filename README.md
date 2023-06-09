@@ -6,7 +6,7 @@
 
 ## 설치
 
-[다운로드](https://github.com/pozafly/raw/main/alfred-korean-english-converter/src/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 받으실 수 있어요 :)
+[다운로드](https://github.com/pozafly/alfred-korean-english-converter/blob/main/src/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 받으실 수 있어요 :)
 
 ## 사용법
 
