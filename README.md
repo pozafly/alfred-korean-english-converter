@@ -8,6 +8,8 @@
 
 [다운로드](https://github.com/pozafly/alfred-korean-english-converter/raw/main/src/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 받으실 수 있어요 :)
 
+다운로드 파일을 실행시켜 Alfred에서 install 하시면 사용하실 수 있습니다.
+
 ## 사용법
 
 1. 입력 문자를 드래그 합니다.
