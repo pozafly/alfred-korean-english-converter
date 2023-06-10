@@ -9,9 +9,20 @@ function run(argv) {
   }
 }
 
+function isUpperString(value) {
+  if (value.toUpperCase() === value) {
+    return true;
+  }
+  return false;
+}
+
 function convert(query) {
   if (isEng(query)) {
-    return engTypeToKor(query.toLowerCase());
+    if (isUpperString(query[0])) {
+      query = query[0].toLowerCase() + query.substr(1);
+    }
+
+    return engTypeToKor(query);
   }
 
   // TODO: Alfred에 넣을 때 주석 풀어주자.
@@ -35,7 +46,6 @@ const JUNG_DATA = 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢ�
 const JONG_DATA = 'ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆㅇㅈㅊㅋㅌㅍㅎ';
 
 function engTypeToKor(src) {
-  console.log('src', src);
   let res = '';
   if (src.length == 0) return res;
 
@@ -45,7 +55,6 @@ function engTypeToKor(src) {
 
   for (let i = 0; i < src.length; i++) {
     const ch = src.charAt(i);
-    console.log('ch', ch);
     const p = ENG_KEY.indexOf(ch);
     if (p == -1) {
       // 영자판이 아님
