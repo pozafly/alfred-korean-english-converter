@@ -1,6 +1,6 @@
 # Korean English Converter Alfred Workflow
 
-잘못 입력한 영타를 한글로, 한타를 영문으로 변환해주는 Workflow.
+잘못 입력한 영타를 한글로, 한타를 영문으로 변환해주는 Workflow. 그리고 [개발기](https://pozafly.github.io/tools/alfred-korean-english-converter/).
 
 ![converter](/converter.gif)
 
