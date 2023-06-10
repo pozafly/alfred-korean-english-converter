@@ -6,7 +6,7 @@
 
 ## 설치
 
-[다운로드](https://github.com/pozafly/alfred-korean-english-converter/raw/main/src/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 받으실 수 있어요 :)
+[다운로드](https://github.com/pozafly/alfred-korean-english-converter/raw/main/workflow/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 받으실 수 있어요 :)
 
 다운로드 파일을 실행시켜 Alfred에서 install 하시면 사용하실 수 있습니다.
 
@@ -27,6 +27,10 @@
 
 - Command-C 키를 눌러 복사하는 과정은 이제 제거 되었습니다.
 - 붙여넣어진 후 커서가 한줄 내려가는 문제가 해결되었습니다.
+
+  0.0.6 fix
+
+- 첫글자가 대문자일 경우 변환 오류가 해결되었습니다.
 
 ## 개발 환경
 
