@@ -1,0 +1,15 @@
+{
+  "name": "alfred-korean-english-converter",
+  "version": "0.0.6",
+  "description": "잘못 입력한 영타와 한타, 그리고 한타와 영타를 변환해줍니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "pozafly",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
