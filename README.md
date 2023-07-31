@@ -4,22 +4,14 @@
 
 잘못 입력한 영타를 한글로, 한타를 영문으로 변환해주는 Workflow 입니다.
 
-
-
-<br/>
-
 ## 필수
 
 - Node.js(LTS)가 설치되어 있어야 합니다. [Node.js](https://nodejs.org/ko)에서 다운받으실 수 있습니다.
 - Alfred Powerpack이 활성화 되어있어야 합니다.
 
-<br/>
-
 ## 설치
 
 - [링크](https://github.com/pozafly/alfred-korean-english-converter/raw/main/workflow/Korean-English-Converter.alfredworkflow)를 클릭하면 파일을 다운로드 후, 파일을 실행시켜 Alfred에서 install 하시면 사용하실 수 있습니다.
-
-<br/>
 
 ## 사용법
 
@@ -34,8 +26,6 @@
 
 1. 입력 문자를 드래그 합니다.
 2. `command` + `control` + `/` 키를 누릅니다.
-
-<br />
 
 ## 주의사항
 
