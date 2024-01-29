@@ -5,6 +5,7 @@ function run(argv) {
     query = query.trim();
     return convert(query);
   } catch (err) {
+    console.log(err);
     return false;
   }
 }
@@ -29,7 +30,8 @@ function convert(query) {
   // const app = Application.currentApplication();
   // app.includeStandardAdditions = true;
 
-  // query = app.doShellScript(`echo "${query}" | iconv -c -t utf-8 -f UTF8-MAC`);
+  // NOTE: apple silicon 맥에서 UTF8-MAC에서 UTF-8-MAC(from) 으로 변경
+  // query = app.doShellScript(`echo "${query}" | iconv -c -t utf-8 -f UTF-8-MAC`);
   return korTypeToEng(query);
 }
 
@@ -38,15 +40,15 @@ function isEng(query) {
   return pattern.test(query[0]);
 }
 
-const ENG_KEY = 'rRseEfaqQtTdwWczxvgkoiOjpuPhynbml';
+const ENG_KEY = "rRseEfaqQtTdwWczxvgkoiOjpuPhynbml";
 const KOR_KEY =
-  'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎㅏㅐㅑㅒㅓㅔㅕㅖㅗㅛㅜㅠㅡㅣ';
-const CHO_DATA = 'ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ';
-const JUNG_DATA = 'ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ';
-const JONG_DATA = 'ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆㅇㅈㅊㅋㅌㅍㅎ';
+  "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎㅏㅐㅑㅒㅓㅔㅕㅖㅗㅛㅜㅠㅡㅣ";
+const CHO_DATA = "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎ";
+const JUNG_DATA = "ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ";
+const JONG_DATA = "ㄱㄲㄳㄴㄵㄶㄷㄹㄺㄻㄼㄽㄾㄿㅀㅁㅂㅄㅅㅆㅇㅈㅊㅋㅌㅍㅎ";
 
 function engTypeToKor(src) {
-  let res = '';
+  let res = "";
   if (src.length == 0) return res;
 
   let nCho = -1,
@@ -325,7 +327,7 @@ function makeHangul(nCho, nJung, nJong) {
 }
 
 function korTypeToEng(src) {
-  let res = '';
+  let res = "";
   if (src.length == 0) return res;
 
   for (let i = 0; i < src.length; i++) {
